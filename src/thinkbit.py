@@ -33,7 +33,7 @@ class ThinkBitClient(object):
 
     # 签名函数
     def sign(self, data):
-        sign = hmac.new(self.api_secret, data, sha512)
+        sign = hmac.new(str.encode(self.api_secret), str.encode(data), sha512)
         headers = {'api_key': self.api_key,
                    'signature': sign.hexdigest()
                    }
