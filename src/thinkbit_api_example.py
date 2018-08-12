@@ -7,7 +7,7 @@ Created on Mar 11, 2018
 
 import time
 
-from .thinkbit import ThinkBitClient
+from thinkbit import ThinkBitClient
 
 API_KEY = 'cae9b026ec117935a0530a2fbc70445c'
 API_SECRET = '5d6bd9b6d74da2eb869bbc2d58a79d0468139dd49674c547bb06b2074d6b0e27'
